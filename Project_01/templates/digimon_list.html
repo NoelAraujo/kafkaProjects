@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Lista de Digimons</title>
+</head>
+
+<body>
+
+    <h1>Lista de Digimons</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+        </tr>
+
+        {% for digimon in digimons %}
+        <tr>
+            <td>{{ digimon[0] }}</td>
+            <td>{{ digimon[1] }}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+
+</body>
+
+</html>
